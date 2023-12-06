@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="contact.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    
+</head>
+<style>
+    
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    width: 90%; /* Increase the form width */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease; /* Add animation */
+}
+
+.contact-form:hover {
+    transform: scale(1.02); /* Enlarge the form on hover */
+}
+
+.field {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.field label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:lightpink; /* Green color for labels */
+}
+
+.field input {
+    width: 97%;
+    padding: 10px;
+    border: 1px soid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+}
+
+.field input:focus {
+    border-color:blue;
+} 
+
+#button {
+    display: inline-block;
+    background-color:blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#button:hover {
+    background-color:lightpink;
+}
+
+ h1:hover{
+    color:lightpink;
+}
+      .footer-clean{
+        padding: 50px 50px;
+        background: lightpink ;
+        color: black;
+    }
+    .footer-clean h3{
+        margin-top: 0;
+        margin-bottom: 12px;
+        font-weight: 50px;
+        font-size: 30px;
+        text-align: left;
+        color: rgb(9, 158, 158);
+        padding-bottom: 30px;
+    }
+    .footer-clean ul{
+        padding: 0;
+        list-style: none;
+        line-height: 1.6;
+        font-size: 20px;
+        margin-bottom: 0;
+}
+.footer-clean ul a{
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.8;
+}
+.footer-clean ul a:hover{
+    color: rgb(9, 158, 158);
+}
+.footer-clean .item.social{
+    text-align: right;
+}
+#f-form{
+    text-align: center;
+    justify-content: center;
+    align-content: center
+}
+#f-btn{
+    width: 250px;
+    color: #ffffff;
+    background-color:lightblue;
+    }
+    #f-btn:hover{
+        width: 250px;
+        color: #dddddd;
+        background-color: rgb(9, 158, 158)
+    }
+    #f-copy{
+        background-color: #cecccc;
+    }
+    <!-- .zoom-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+}
+</style>
+<body>
+
+    
+
+  <!-- navbar start -->
+
+  
+    
+  <nav class ="navbar navbar-expand-sm navbar-pink  " style="background-color: rgb(255, 218, 218);color: black;">
+    <div class="container-fluid">
+      <a class="navbar-brand text-info" href="#"><h1><b>THE CAKE</b></h1><img src="images-removebg-preview.png" width="180px" height="90px" alt=""></a></a>
+      <button class="navbar-toggler" type="button " style="color: #000000 ; text-shadow: #000000;" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" >
+        <span class="navbar-toggler-icon " style="background-color: rgba(87, 32, 170, 0.979);color: rgb(177, 13, 13);"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarScroll">
+        <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+          <li class="nav-item">
+            <a class="nav-link active text-info" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="Gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="About US.html">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link text-info" href="contact us.html">contact us</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle  text-info" href="" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              product In Varieties
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+              <li><a class="dropdown-item te" href="products.html"> Birthday Cake </a></li>
+              <li><a class="dropdown-item" href="Aniversery.html">Anniversiry Cake</a></li>
+              <li><a class="dropdown-item" href="marriage.html">merriage Cake</a></li>
+            </ul>
+          </li>
+          
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-primary" type="submit">search</button>
+        </form>
+      </div>
+    </div>
+  </nav> 
+  <!-- navbar end -->
+
+<br>
+
+             <center>   
+                <div>
+                    <h1 style="font-size: 5rem; text-align: center;"><i> CONTACT US</i></h1>
+                <br><br>
+            
+                <form id="form" class="contact-form">
+                    <div class="field">
+                        <label for="projectname" style="text-align: left;" > Enter Name</label>
+                        <input type="text" name="name" id="projectname">
+                    </div>
+                    <div class="field">
+                        <label for="developername" style="text-align: left;">Enter Phone</label>
+                        <input type="text" name="phone" id="developername">
+                    </div>
+                  
+                    <div class="field">
+                        <label for="from_name" style="text-align: left;">Enter Email</label>
+                        <input type="text" name="email" id="from_name">
+                    </div>
+                   
+                    <div class="field">
+                        <label for="comments" style="text-align: left; " >Enter Message</label>
+                        <input type="text" name="msg" id="comments" style="height: 90px;" >
+                    </div>
+                    <input type="submit" id="button" value="Send Email">
+                    <br>
+                    <input type="reset" id="button" value="Reset">
+                </form>
+                <br>
+                <a href="index.html"><button style="color: white; background-color: blue; width: 20%; height: 60px; font-size: large; border-radius: 20px; " >Go Back</button></a>
+
+            </div>
+          </center>
+            
+            <script type="text/javascript"
+              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+            
+            <script type="text/javascript">
+              emailjs.init('Tw3j5BjeFM-v4sSER')
+            </script>
+            <script src="imail.js"></script>
+             
+            
+
+      
+
+
+
+<script src="contact.js" ></script>
+
+
+</body>
+   <!-- footer start -->
+
+   <div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-3">
+                    <h1>Address</h1>
+                    <p>Korangi,Karachi</p>
+                    <div class="mt-3">
+                        
+                        <iframe src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 180px; height: 100px;"></iframe>
+            
+                      </div>
+
+                </div>
+<div class="col-md-3">
+    <h2>Help Us</h2>
+    <ul class="mt-3">
+       <li><a href="Untitled-1.html">Home</a></li>
+       <li><a href="About US.html">About Us</a></li>
+       <li><a href="Galery.html">Shop</a></li>
+       <li><a href="Gallery.html">Gallery</a></li>
+       <li><a href="contact us.html">Contact Us</a></li>
+    </ul>
+
+</div>                
+<div class="col-md-3">
+  <h2>Follow Us</h2>
+  <ul>
+    <li> <img src="facebook_logo-removebg-preview.png" style="width: 10%;"> Facebook</li>
+    <li> <img src="whatsapp_logo-removebg-preview.png" style="width: 10%;">whatsapp</li>
+    <li> <img src="twitter_logo-removebg-preview.png" style="width: 10%;">twitter</li>
+  </ul>
+
+</div>
+
+<div class="col-md-3">
+    <div>
+        <h2>Contact Us</h2>
+
+    </div>
+    <Form id="f-form">
+        <fieldset class="form-group">
+            <input type="email" class="form-control" id="Exampleinputemail"
+            placeholder="Enter email">
+        </fieldset>
+        <fieldset class="form-group">
+            <textarea class="form-control" id="exampleMessage" placeholder="Messege"></textarea>
+
+        </fieldset>
+        <fieldset class="form-group text-xs-right">
+            <button id="f-btn" type="button" class="btn btn-secondary btn-lg">Send</button>
+        </fieldset>
+    </Form>
+</div>
+
+<h2>Contact Us</h2>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- footer end -->
+</html>

@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+           <!-- Favicon -->
+           <link href="img/favicon.ico" rel="icon">
+    
+           <!-- Google Fonts -->
+           <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
+           
+           <!-- Font Awesome -->
+           <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+    
+           <!-- Template Style sheet -->
+           <link href="css/style.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.js">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+	<link rel="stylesheet" href="index.css"/>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+	<script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>    
+</head>
+ <style>
+        *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+    
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+    
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #454545;
+        font-weight: 400;
+        background: #ffffff;
+    }
+    
+    a {
+        color: #333333;
+        font-weight: 400;
+        outline: none;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+    
+    a:hover,
+    a:active,
+    a:focus {
+        outline: none;
+        text-decoration: none;
+    }
+    
+    p {
+        padding: 0;
+        margin: 0 0 15px 0;
+        color: #454545;
+        font-weight: 400;
+    }
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding: 0;
+        margin: 0 0 15px 0;
+        color: #333333;
+        font-weight: 700;
+        
+    }
+    
+    h1 {
+        font-weight: 900;
+    }
+    
+    img {
+        width: 100%;
+        ;
+    }
+    
+    .credit {
+        padding: 30px 15px 0 15px;
+        text-align: center;
+        font-size: 30px;
+        font-weight: 400;
+    }
+    
+    .credit a {
+        font-weight: 900;
+        color: #000000;
+        text-decoration: underline;
+    }
+    /**********************************/
+    /***** Layout & Section Title *****/
+    /**********************************/
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+    
+    .row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    
+    .column {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    
+    @media (min-width: 576px) {
+        .column {
+            -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+    
+    @media (min-width: 768px) {
+        .column {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .column {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+    
+    .section-title {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        padding: 45px 0 30px 0;
+    }
+    
+    .section-title::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 1px;
+        left: 0;
+        background: #eeeeee;
+    }
+    
+    .section-title h1 {
+        color: #353535;
+        font-size: 50px;
+        letter-spacing: 5px;
+        margin-bottom: 5px;
+    }
+    
+    @media(max-width: 767.98px) {
+        .section-title h1 {
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+    }
+    
+    @media(max-width: 567.98px) {
+        .section-title h1 {
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+    }
+    **********************************/
+/********** Effect #3 CSS *********/
+/**********************************/
+.effect-3 {
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.effect-3 .effect-img {
+    font-size: 0;
+    overflow: hidden;
+}
+
+.effect-3 .effect-img img {
+    width: 100%;
+    height: auto;
+    transition: .3s;
+}
+
+.effect-3:hover .effect-img img {
+    transform: scale(1.2);
+}
+
+.effect-3 .effect-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
+    transition: .5s;
+    transform: scale(0);
+    opacity: 0;
+}
+
+.effect-3:hover .effect-text {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.effect-3 .effect-text h2 {
+    height: 45px;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 0;
+}
+
+.effect-3 .effect-text p {
+    color: #ffffff;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+
+.effect-3 .effect-btn .btn {
+    display: inline-block;
+    height: 35px;
+    padding: 7px 15px;
+    color: #333333;
+    background: #ffffff;
+}
+
+
+ 
+        .footer-clean{
+            padding: 50px 50px;
+            background: lightpink ;
+            color: black;
+        }
+        .footer-clean h3{
+            margin-top: 0;
+            margin-bottom: 12px;
+            font-weight: 50px;
+            font-size: 30px;
+            text-align: left;
+            color: rgb(9, 158, 158);
+            padding-bottom: 30px;
+        }
+        .footer-clean ul{
+            padding: 0;
+            list-style: none;
+            line-height: 1.6;
+            font-size: 20px;
+            margin-bottom: 0;
+    }
+    .footer-clean ul a{
+        color: inherit;
+        text-decoration: none;
+        opacity: 0.8;
+    }
+    .footer-clean ul a:hover{
+        color: rgb(9, 158, 158);
+    }
+    .footer-clean .item.social{
+        text-align: right;
+    }
+    #f-form{
+        text-align: center;
+        justify-content: center;
+        align-content: center
+    }
+    #f-btn{
+        width: 250px;
+        color: #ffffff;
+        background-color:lightblue;
+        }
+        #f-btn:hover{
+            width: 250px;
+            color: #dddddd;
+            background-color: rgb(9, 158, 158)
+        }
+        #f-copy{
+            background-color: #cecccc;
+        }
+    </style>
+    <style>
+        *{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+
+.main header .iconShopping{
+	cursor: pointer;
+	z-index: 1;
+	position: relative;
+	font-size: 1.8rem;
+}
+/*img zoom*/
+ .zoom-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%; /* Adjust the width as needed */
+}
+
+.zoom-image {
+  width: 100%;
+  height: 400px;
+  transition: transform 0.4s ease;
+}
+
+.zoom-container:hover .zoom-image {
+  transform: scale(1.2); /* Adjust the zoom level as needed */
+}
+
+/*items*/
+
+/*cart box*/
+.cartBox{
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.8);
+	z-index: 99999;
+	transition: 0.3s linear;
+	transform: scale(0);
+}
+.cartBox.active{
+	transform: scale(1);
+}
+.cartBox .cart{
+	position: relative;
+	height: 70%;
+	width: 80%;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.cartBox .cart i{
+	position: absolute;
+	right: 0;
+	top: 0;
+	background:#f00;
+	padding:10px 15px;
+	color: #fff;
+	cursor: pointer;
+}
+.cartBox .cart i:hover{
+	background: #ff0000a5;
+}
+.cartBox .cart h1{
+	position: relative;
+	margin-top: 2%;
+	font-size: 2.8rem;
+	color: #017bf5;
+}
+    </style>
+<body>
+    <!-- navbar start -->
+
+    <nav class ="navbar navbar-expand-sm navbar-pink  " style="background-color: rgb(255, 218, 218);color: black;">
+        <div class="container-fluid">
+          <a class="navbar-brand text-info" href="#"><h1><b>THE CAKE</b></h1><img src="images-removebg-preview.png" width="180px" height="90px" alt=""></a></a>
+          <button class="navbar-toggler" type="button " style="color: #000000 ; text-shadow: #000000;" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation" >
+            <span class="navbar-toggler-icon " style="background-color: rgba(87, 32, 170, 0.979);color: rgb(177, 13, 13);"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active text-info" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="Gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="About US.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-info" href="contact us.html">Contact Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle  text-info" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  product In Varieties
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item te" href="products.html"> Birthday Cake </a></li>
+                  <li><a class="dropdown-item" href="Aniversery.html">Anniversiry Cake</a></li>
+                  <li><a class="dropdown-item" href="marriage.html">Marriage Cake</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Search</button>
+            </form>
+           
+                <div class="iconShopping">
+                    <p>0</p>
+                    <i class="fa fa-shopping-cart"></i>
+                </div>
+           
+          </div>
+        </div>
+      </nav> 
+    
+
+      <script>
+		
+		function Delete(e){
+			let items = [];
+			JSON.parse(localStorage.getItem('items')).map(data=>{
+				if(data.id != e.parentElement.parentElement.children[0].textContent){
+					
+					items.push(data);
+
+				}
+			});
+			localStorage.setItem('items',JSON.stringify(items));
+			window.location.reload();
+		};
+	</script>
+    <div class="main" style="margin-top: 25px;">
+	
+		<div class="container">
+			
+			<div class="col-lg-12">
+				<div class="row work" id="#allproduct">
+					<div class="col-lg-4" data-type="five">
+						<div class="card h-100">
+                            <div class="col-12 jumbo-img-set zoom-container">
+                                <a href="Brands.html"><img src="chocolate-cream-cake-white-and-black-strawberry-cake-wallpaper-preview.jpg" alt="picture" width="100%" height="360px"
+                                    class=" zoom-image"></a>
+                              </div>
+							
+							<div class="card-body">
+                                <center>
+								<h5>CAKE</h5>
+								<p>$<span>42.50</span></p>
+                                <p>Egg less</p>
+								<a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                            </center>
+                            </div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card h-100">
+                            <div class="col-12 jumbo-img-set zoom-container">
+                                <a href="Brands.html"><img src="aniversery 2.jpeg" alt="picture" width="100%" height="360px"
+                                    class=" zoom-image"></a>
+                              </div>
+							<div class="card-body">
+                                <center>
+								<h5>CAKE</h5>
+								<p>$<span>15.50</span></p>
+                                <p>$<span>with egg</span></p>
+								<a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                                </center>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card h-100">
+                            <div class="col-12 jumbo-img-set zoom-container">
+                                <a href="Brands.html"><img src="aniversery 3.jpeg" alt="picture" width="100%" height="360px"
+                                    class=" zoom-image"></a>
+                              </div>
+							<div class="itemInfo">
+                                <center>
+								<h5>CAKE</h5>
+								<p>$<span>100.50</span></p>
+                                <p>$<span>egg less</span></p>
+								<a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                                </center>
+							</div>
+						</div>
+					</div>
+
+                   
+					
+				</div>
+			</div>
+            
+            <br>
+            <br>
+            <br>
+            <div class="col-lg-12">
+				<div class="row work" id="#allproduct">
+					<div class="col-lg-4" data-type="five">
+						<div class="card h-100">
+                            <div class="col-12 jumbo-img-set zoom-container">
+                                <a href="Brands.html"><img src="aniverser 4.jpeg" alt="picture" width="100%" height="360px"
+                                    class=" zoom-image"></a>
+                              </div>
+							<div class="card-body">
+                                <center>	
+                                    <h5>CAKE</h5>							<h5>Indoor plant</h5>
+								<p>$<span>42.50</span></p>
+								<p><span>with egg</span></p>
+								<a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                            </center>
+
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card h-100">
+                            <div class="col-12 jumbo-img-set zoom-container">
+                                <a href="Brands.html"><img src="anniversery 5.jpeg" alt="picture" width="100%" height="360px"
+                                    class=" zoom-image"></a>
+                              </div>
+							<div class="card-body">
+                                <center>
+								<h5>ANNIVERSIRY CAKE</h5>
+								<p>$<span>15.50</span></p>
+                                <p><span>with egg</span></p>
+								<a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                            </center>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4">
+						<div class="card h-100">
+                            <div class="col-12 jumbo-img-set zoom-container">
+                                <a href="Brands.html"><img src="anniversery 6.jpeg" alt="picture" width="100%" height="360px"
+                                    class=" zoom-image"></a>
+                              </div>
+							<div class="itemInfo">
+                                <center>
+								<h5>CAKE</h5>
+								<p>$<span>100.50</span></p>
+                                <p><span>without egg</span></p>
+								<a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                            </center>
+							</div>
+						</div>
+					</div>
+
+                   
+					
+				</div>
+			</div>
+            <div class="row work" id="#allproduct">
+                <div class="col-lg-4" data-type="five">
+                    <div class="card h-100">
+                        <div class="col-12 jumbo-img-set zoom-container">
+                            <a href="Brands.html"><img src="anniversery7.jpeg" alt="picture" width="100%" height="360px"
+                                class=" zoom-image"></a>
+                          </div>
+                        <div class="card-body">
+                            <center>
+                            <h5>MEDIUM CAKE</h5>
+                            <p>$<span>42.50</span></p>
+                            <p>Egg less</p>
+                            <a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                        </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="col-12 jumbo-img-set zoom-container">
+                            <a href="Brands.html"><img src="anniversery 8.jpeg" alt="picture" width="100%" height="360px"
+                                class=" zoom-image"></a>
+                          </div>
+                        <div class="card-body">
+                            <center>
+                            <h5>CAKE</h5>
+                            <p>$<span>15.50</span></p>
+                            <p>Egg less</p>
+                            <a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                        </center>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card h-100">
+                        <div class="col-12 jumbo-img-set zoom-container">
+                            <a href="Brands.html"><img src="anniversery 9.jpeg" alt="picture" width="100%" height="360px"
+                                class=" zoom-image"></a>
+                          </div>
+                        <div class="itemInfo">
+                            <center>
+                            <h5>COUPLE CAKE</h5>
+                            <p>$<span>100.50</span></p>
+                            <p>with egg</p>
+                            <a href="#" title="add to cart" class="attToCart btn btn-dark">Add to cart</a>
+                        </center>
+                        </div>
+                    </div>
+                </div>
+
+               
+                
+            </div>
+			</div>
+			
+		
+		</div>
+	
+	</div>
+    
+	<div class="cartBox">
+		<div class="cart">
+			<i class="fa fa-close"></i>
+			<h1>Cart</h1>
+			<table class="table"></table>
+			<!-- <a class="btn btn-dark" href="">CheckOut</a> -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                CheckOut
+              </button>
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title"></h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal">CheckOut</button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <center><h1>Check out</h1></center>
+                        <form action="">
+                            <label for="" class="fs-3">Name:</label>
+                            <input type="text" class="form-control" placeholder="enter your name" id="getname">
+                            <br>
+                            <label for="" class="fs-3" >Adress:</label>
+                            <input type="text" class="form-control" placeholder="enter your Adress" id="getcountry">
+                            <br>
+                          
+                            </select>
+                            <br>
+                            <label for="" class="fs-3">Contact:</label>
+                            <input type="email" class="form-control" placeholder="enter your Number" id="getemail">
+                            <br>
+                            <label for="" class="fs-3">Email:</label>
+                            <input type="email" class="form-control" placeholder="enter your email" id="getemail">
+                            <label for="" class="fs-3">Delivery Adress:</label>
+                            <input type="email" class="form-control" placeholder="enter Delivery Adress" id="getemail">
+                            <label for="" class="fs-3">Delivery Date:</label>
+                            <input type="email" class="form-control" placeholder="enter delivery date" id="getemail">
+                            
+                            <center><button id="btn" type="button" class="btn btn-outline-dark mt-3 mb-5">Submit</button></center>
+                            
+                          </form>
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+		</div>
+	</div>
+    <!-- script -->
+	<script src="index.js"></script>
+      <!-- footer start -->
+
+      <div class="footer-clean">
+        <footer>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3">
+                        <h1>Address</h1>
+                        <p>Korangi,Karachi</p>
+                        <div class="mt-3">
+                            
+                            <iframe src="https://maps.google.com/maps?q=university%20of%20san%20francisco&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=&amp;output=embed" frameborder="0" scrolling="no" style="width: 180px; height: 100px;"></iframe>
+                
+                          </div>
+
+                    </div>
+    <div class="col-md-3">
+        <h2>Help Us</h2>
+        <ul class="mt-3">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="About US.html">About Us</a></li>
+           <li><a href="Galery.html">Shop</a></li>
+           <li><a href="Gallery.html">Gallery</a></li>
+           <li><a href="contact us.html">Contact Us</a></li>
+        </ul>
+
+    </div>                
+    <div class="col-md-3">
+      <h2>Follow Us</h2>
+      <ul>
+        <li> <img src="facebook_logo-removebg-preview.png" style="width: 10%;"> Facebook</li>
+        <li> <img src="whatsapp_logo-removebg-preview.png" style="width: 10%;">whatsapp</li>
+        <li> <img src="twitter_logo-removebg-preview.png" style="width: 10%;">twitter</li>
+      </ul>
+
+    </div>
+
+    <div class="col-md-3">
+        <div>
+            <h2>Contact Us</h2>
+
+        </div>
+        <Form id="f-form">
+            <fieldset class="form-group">
+                <input type="email" class="form-control" id="Exampleinputemail"
+                placeholder="Enter email">
+            </fieldset>
+            <fieldset class="form-group">
+                <textarea class="form-control" id="exampleMessage" placeholder="Messege"></textarea>
+
+            </fieldset>
+            <fieldset class="form-group text-xs-right">
+                <button id="f-btn" type="button" class="btn btn-secondary btn-lg">Send</button>
+            </fieldset>
+        </Form>
+    </div>
+
+    <h2>Contact Us</h2>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- footer end -->
+    </body>
